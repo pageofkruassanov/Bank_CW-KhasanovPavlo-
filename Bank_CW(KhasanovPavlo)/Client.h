@@ -10,7 +10,9 @@ public:
 
 	void addMoney(unsigned int sum);
 
-	static int getId();
+	int getId();
+
+	long getBalance();
 
 	void withdrawMoney(unsigned int sum);
 

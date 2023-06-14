@@ -1,6 +1,10 @@
 #pragma once
 #include "Client.h"
 
+#include <iostream>
+
+using namespace std;
+
 class Bank
 {
 private:
@@ -13,7 +17,11 @@ public:
 
 	void delClient(int id);
 
-	void transferMoney(int id, unsigned money);
+	void transferMoney(int idFrom, int idTo, unsigned money);
+
+	void addMoney(int id, unsigned money);
+
+	void outClient(int id);
 
 	~Bank();
 };

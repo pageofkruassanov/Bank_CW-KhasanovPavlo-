@@ -14,7 +14,12 @@ void Client::addMoney(unsigned int sum)
 
 int Client::getId()
 {
-	return id;
+	return identification;
+}
+
+long Client::getBalance()
+{
+	return balance;
 }
 
 void Client::withdrawMoney(unsigned int sum)
